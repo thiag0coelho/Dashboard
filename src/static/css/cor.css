@@ -1,0 +1,491 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ------------------------------------------------------------------------------------------ */
+/* ---------------------------------------- AZUL -------------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+
+/* cor principal */
+
+.botao,
+#botao_login,
+.icone_modulo,
+input.pesquisar,
+#titulo .nome_tela,
+.wizard span.atual h3,
+#subtitulo .nome_tela,
+#titulo #filtro_unidade a,
+#cabecalho .menu ul li.ativo,
+.componente.botao_campo input,
+.menu_lateral .btn_menu_lateral,
+.grid .navegacao .botao_navegacao,
+#cabecalho .menu ul #nome_modulo:hover,
+.home_interna #titulo h4 .icone_titulo,
+.GridPager .NumericContainer .NumericItem, 
+.GridPager .NumericContainer .CurrentItem { background-color:#146cac; }
+
+.componente.botao_campo input { *background-color: #146cac !important; }
+
+.grid th a:hover,
+.faixa_titulo h2,
+#titulo .acoes a:hover,
+#titulo .barra_botoes li .botao_texto:hover,
+.Syncfusion-Grid-Marble .GridHeader .HeaderCellHover,
+.menu_lateral li.submenu span:hover,
+.menu_lateral li.atual a {
+	color: #146cac;
+}
+
+select:focus,
+input:focus,
+textarea:focus, 
+.selector.focus span {
+	color:#146cac !important;
+}
+
+#menu .dropdown .coluna-1 ul li a:hover, 
+#menu .dropdown ul li.submenu .submenu_titulo:hover, 
+#menu .dropdown ul li.selecionado .submenu_titulo { border-left: 3px solid #146cac !important; }
+#cabecalho { border-bottom: 5px solid #146cac; }
+.fixar .faixa_flutuante { border-bottom: 3px solid #146cac !important; }
+.grid th { border-top:0px solid #146cac; }
+
+
+/* variações da cor principal */
+
+#botao_login:hover { background-color:#126aa5; }
+
+#botao_login { border:1px solid #2f96db; }
+
+.sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-active { background-color: #2179ba; }
+
+.abrir h3 a:hover {	background-color:#84baec; }
+
+.Syncfusion-Grid-Marble .SelectionBackground { background-color: #b7d0f2 !important; }
+
+.sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-hover,
+.sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-highlight { background-color: #c1e1fa; }
+
+.area_retratil .aba,
+.area_retratil .abas_simples li a.ativo { border: 1px solid #cddfe4; }
+.area_retratil .abas_simples { border-bottom: 1px solid #cddfe4; }
+.grid  tr.selecionada,
+.Syncfusion-Grid-Marble .SelectionBackground { background-color:#cfdfe4 !important; }
+
+.ui-datepicker td:hover,
+#titulo .nome_tela.secundario,
+#subtitulo .nome_tela.secundario,
+#titulo .nome_tela.breadscrumb,
+#subtitulo .nome_tela.breadscrumb,
+.area_retratil .abas_simples li a.ativo { background-color:#daecf2; }
+
+.painel h3 a:hover {
+	background-color: rgba(174, 205, 233, 0.35);
+	*background-color: #e2edf7;
+}
+
+#menu .dropdown ul li a:hover, 
+#menu .dropdown ul li.submenu .submenu_titulo:hover, 
+#menu .dropdown ul li.selecionado .submenu_titulo {	background-color:#edecf3; }
+
+.area_retratil .aba { background-color: #dee8ed; }
+
+
+/* gradientes */
+
+#titulo .nome_tela,
+#subtitulo .nome_tela,
+#cabecalho .menu ul #nome_modulo:hover,
+#cabecalho .menu ul li.ativo,
+#titulo .nome_tela.breadscrumb,
+#subtitulo .nome_tela.breadscrumb { 
+    background: #1c88d0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1c88d0 0%, #146cac 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  #1c88d0 0%,#146cac 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #1c88d0 0%,#146cac 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #1c88d0 0%,#146cac 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #1c88d0 0%,#146cac 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c88d0', endColorstr='#146cac',GradientType=0 ); /* IE6-9 */
+}
+
+.abrir h3,
+.wizard span.atual,
+#titulo .nome_tela.secundario,
+#subtitulo .nome_tela.secundario {
+    background: #bcdbf5; /* Old browsers */
+    background: -moz-linear-gradient(top,  #bcdbf5 0%, #97bde8 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  #bcdbf5 0%,#97bde8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #bcdbf5 0%,#97bde8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #bcdbf5 0%,#97bde8 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #bcdbf5 0%,#97bde8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcdbf5', endColorstr='#97bde8',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* --------------------------------------- VERDE -------------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+
+/* cor principal */
+
+.verde .botao,
+.verde #botao_login,
+.verde .icone_modulo,
+.verde input.pesquisar,
+.verde #titulo .nome_tela,
+.verde .wizard span.atual h3,
+.verde #subtitulo .nome_tela,
+.verde #titulo #filtro_unidade a,
+.verde #cabecalho .menu ul li.ativo,
+.verde .componente.botao_campo input,
+.verde .menu_lateral .btn_menu_lateral,
+.verde .grid .navegacao .botao_navegacao,
+.verde #cabecalho .menu ul #nome_modulo:hover,
+.verde .home_interna #titulo h4 .icone_titulo,
+.verde .GridPager .NumericContainer .NumericItem, 
+.verde .GridPager .NumericContainer .CurrentItem { background-color:#319a23; }
+
+.verde .componente.botao_campo input { *background-color: #319a23 !important; }
+
+.verde .grid th a:hover,
+.verde .faixa_titulo h2,
+.verde #titulo .acoes a:hover,
+.verde #titulo .barra_botoes li .botao_texto:hover,
+.verde .Syncfusion-Grid-Marble .GridHeader .HeaderCellHover,
+.verde .menu_lateral li.submenu span:hover,
+.verde .menu_lateral li.atual a {
+	color: #319a23;
+}
+
+.verde select:focus,
+.verde input:focus,
+.verde textarea:focus, 
+.verde .selector.focus span {
+	color:#319a23 !important;
+}
+
+.verde #menu .dropdown .coluna-1 ul li a:hover, 
+.verde #menu .dropdown ul li.submenu .submenu_titulo:hover, 
+.verde #menu .dropdown ul li.selecionado .submenu_titulo { border-left: 3px solid #319a23 !important; }
+.verde #cabecalho { border-bottom: 5px solid #319a23; }
+.verde .fixar .faixa_flutuante { border-bottom: 3px solid #319a23 !important; }
+.verde .grid th { border-top:0px solid #319a23; }
+
+
+/* variações da cor principal */
+
+.verde #botao_login:hover { background-color:#319624; }
+
+.verde #botao_login { border:1px solid #4db23e; }
+
+.verde .sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-active { background-color: #40a133; }
+
+.verde .abrir h3 a:hover {	background-color:#92ca8b; }
+
+.verde .Syncfusion-Grid-Marble .SelectionBackground { background-color: #b3daae !important; }
+
+.verde .sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-hover,
+.verde .sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-highlight { background-color: #cbe6c8; }
+
+.verde .area_retratil .aba,
+.verde .area_retratil .abas_simples li a.ativo { border: 1px solid #cde4d7; }
+.verde .area_retratil .abas_simples { border-bottom: 1px solid #cde4d7; }
+.verde .grid  tr.selecionada,
+.verde .Syncfusion-Grid-Marble .SelectionBackground { background-color:#cde4d7 !important; }
+
+.verde .ui-datepicker td:hover,
+.verde #titulo .nome_tela.secundario,
+.verde #subtitulo .nome_tela.secundario,
+.verde #titulo .nome_tela.breadscrumb,
+.verde #subtitulo .nome_tela.breadscrumb,
+.verde .area_retratil .abas_simples li a.ativo { background-color:#e0f0de; }
+
+.verde .painel h3 a:hover {
+	background-color: rgba(180, 233, 174, 0.35);
+	*background-color: #e6f3e4;
+}
+
+.verde #menu .dropdown ul li a:hover, 
+.verde #menu .dropdown ul li.submenu .submenu_titulo:hover, 
+.verde #menu .dropdown ul li.selecionado .submenu_titulo {	background-color:#eef3ec; }
+
+.verde .area_retratil .aba { background-color: #ebeee9; }
+
+
+/* gradientes */
+
+.verde #titulo .nome_tela,
+.verde #subtitulo .nome_tela,
+.verde #cabecalho .menu ul #nome_modulo:hover,
+.verde #cabecalho .menu ul li.ativo,
+.verde #titulo .nome_tela.breadscrumb,
+.verde #subtitulo .nome_tela.breadscrumb { 
+    background: #1c88d0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #60b546 0%, #319a23 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  #60b546 0%,#319a23 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #60b546 0%,#319a23 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #60b546 0%,#319a23 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #60b546 0%,#319a23 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60b546', endColorstr='#319a23',GradientType=0 ); /* IE6-9 */
+}
+
+.verde .abrir h3,
+.verde .wizard span.atual,
+.verde #titulo .nome_tela.secundario,
+.verde #subtitulo .nome_tela.secundario {
+    background: #bcdbf5; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c1e6ab 0%, #a7d98f 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  #c1e6ab 0%,#a7d98f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #c1e6ab 0%,#a7d98f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #c1e6ab 0%,#a7d98f 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #c1e6ab 0%,#a7d98f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1e6ab', endColorstr='#a7d98f',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* -------------------------------------- PETROLEO ------------------------------------------ */
+/* ------------------------------------------------------------------------------------------ */
+
+/* cor principal */
+
+.petroleo .botao,
+.petroleo #botao_login,
+.petroleo .icone_modulo,
+.petroleo input.pesquisar,
+.petroleo #titulo .nome_tela,
+.petroleo .wizard span.atual h3,
+.petroleo #subtitulo .nome_tela,
+.petroleo #titulo #filtro_unidade a,
+.petroleo #cabecalho .menu ul li.ativo,
+.petroleo .componente.botao_campo input,
+.petroleo .menu_lateral .btn_menu_lateral,
+.petroleo .grid .navegacao .botao_navegacao,
+.petroleo #cabecalho .menu ul #nome_modulo:hover,
+.petroleo .home_interna #titulo h4 .icone_titulo,
+.petroleo .GridPager .NumericContainer .NumericItem, 
+.petroleo .GridPager .NumericContainer .CurrentItem { background-color:#06879a; }
+
+.petroleo .componente.botao_campo input { *background-color: #06879a !important; }
+
+.petroleo .grid th a:hover,
+.petroleo .faixa_titulo h2,
+.petroleo #titulo .acoes a:hover,
+.petroleo #titulo .barra_botoes li .botao_texto:hover,
+.petroleo .Syncfusion-Grid-Marble .GridHeader .HeaderCellHover,
+.petroleo .menu_lateral li.submenu span:hover,
+.petroleo .menu_lateral li.atual a {
+	color: #06879a;
+}
+
+.petroleo select:focus,
+.petroleo input:focus,
+.petroleo textarea:focus, 
+.petroleo .selector.focus span {
+	color:#06879a !important;
+}
+
+.petroleo #menu .dropdown .coluna-1 ul li a:hover, 
+.petroleo #menu .dropdown ul li.submenu .submenu_titulo:hover, 
+.petroleo #menu .dropdown ul li.selecionado .submenu_titulo { border-left: 3px solid #06879a !important; }
+.petroleo #cabecalho { border-bottom: 5px solid #06879a; }
+.petroleo .fixar .faixa_flutuante { border-bottom: 3px solid #06879a !important; }
+.petroleo .grid th { border-top:0px solid #06879a; }
+
+
+/* variações da cor principal */
+
+.petroleo #botao_login:hover { background-color:#058092; }
+
+.petroleo #botao_login { border:1px solid #269bac; }
+
+.petroleo .sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-active { background-color: #188fa1; }
+
+.petroleo .abrir h3 a:hover {	background-color:#7bbfca; }
+
+.petroleo .Syncfusion-Grid-Marble .SelectionBackground { background-color: #a3d3da !important; }
+
+.petroleo .sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-hover,
+.petroleo .sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-highlight { background-color: #c1e1e6; }
+
+.petroleo .area_retratil .aba,
+.petroleo .area_retratil .abas_simples li a.ativo { border: 1px solid #cde4e3; }
+.petroleo .area_retratil .abas_simples { border-bottom: 1px solid #cde4e3; }
+.petroleo .grid  tr.selecionada,
+.petroleo .Syncfusion-Grid-Marble .SelectionBackground { background-color:#cde4e3 !important; }
+
+.petroleo .ui-datepicker td:hover,
+.petroleo #titulo .nome_tela.secundario,
+.petroleo #subtitulo .nome_tela.secundario,
+.petroleo #titulo .nome_tela.breadscrumb,
+.petroleo #subtitulo .nome_tela.breadscrumb,
+.petroleo .area_retratil .abas_simples li a.ativo { background-color:#daedf0; }
+
+.petroleo .painel h3 a:hover {
+	background-color: rgba(153, 219, 227, 0.35);
+	*background-color: #99dbe3;
+}
+
+.petroleo #menu .dropdown ul li a:hover, 
+.petroleo #menu .dropdown ul li.submenu .submenu_titulo:hover, 
+.petroleo #menu .dropdown ul li.selecionado .submenu_titulo { background-color:#ecf3f3; }
+
+.petroleo .area_retratil .aba { background-color: #e2ecec; }
+
+
+/* gradientes */
+
+.petroleo #titulo .nome_tela,
+.petroleo #subtitulo .nome_tela,
+.petroleo #cabecalho .menu ul #nome_modulo:hover,
+.petroleo #cabecalho .menu ul li.ativo,
+.petroleo #titulo .nome_tela.breadscrumb,
+.petroleo #subtitulo .nome_tela.breadscrumb { 
+    background: #1c88d0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #10a5b2 0%, #06879a 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  #10a5b2 0%,#06879a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #10a5b2 0%,#06879a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #10a5b2 0%,#06879a 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #10a5b2 0%,#06879a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10a5b2', endColorstr='#06879a',GradientType=0 ); /* IE6-9 */
+}
+
+.petroleo .abrir h3,
+.petroleo .wizard span.atual,
+.petroleo #titulo .nome_tela.secundario,
+.petroleo #subtitulo .nome_tela.secundario {
+    background: #77ccd2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #86d2d6 0%, #6ac8ce 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  #86d2d6 0%,#6ac8ce 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #86d2d6 0%,#6ac8ce 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #86d2d6 0%,#6ac8ce 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #86d2d6 0%,#6ac8ce 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86d2d6', endColorstr='#6ac8ce',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* ---------------------------------------- ROXO -------------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+
+/* cor principal */
+
+.roxo .botao,
+.roxo #botao_login,
+.roxo .icone_modulo,
+.roxo input.pesquisar,
+.roxo #titulo .nome_tela,
+.roxo .wizard span.atual h3,
+.roxo #subtitulo .nome_tela,
+.roxo #titulo #filtro_unidade a,
+.roxo #cabecalho .menu ul li.ativo,
+.roxo .componente.botao_campo input,
+.roxo .menu_lateral .btn_menu_lateral,
+.roxo .grid .navegacao .botao_navegacao,
+.roxo #cabecalho .menu ul #nome_modulo:hover,
+.roxo .home_interna #titulo h4 .icone_titulo,
+.roxo .GridPager .NumericContainer .NumericItem, 
+.roxo .GridPager .NumericContainer .CurrentItem { background-color:#5764c4; }
+
+.roxo .componente.botao_campo input { *background-color: #5764c4 !important; }
+
+.roxo .grid th a:hover,
+.roxo .faixa_titulo h2,
+.roxo #titulo .acoes a:hover,
+.roxo #titulo .barra_botoes li .botao_texto:hover,
+.roxo .Syncfusion-Grid-Marble .GridHeader .HeaderCellHover,
+.roxo .menu_lateral li.submenu span:hover,
+.roxo .menu_lateral li.atual a {
+	color: #5764c4;
+}
+
+.roxo select:focus,
+.roxo input:focus,
+.roxo textarea:focus, 
+.roxo .selector.focus span {
+	color:#5764c4 !important;
+}
+
+.roxo #menu .dropdown .coluna-1 ul li a:hover, 
+.roxo #menu .dropdown ul li.submenu .submenu_titulo:hover, 
+.roxo #menu .dropdown ul li.selecionado .submenu_titulo { border-left: 3px solid #5764c4 !important; }
+.roxo #cabecalho { border-bottom: 5px solid #5764c4; }
+.roxo .fixar .faixa_flutuante { border-bottom: 3px solid #5764c4 !important; }
+.roxo .grid th { border-top:0px solid #5764c4; }
+
+
+/* variações da cor principal */
+
+.roxo #botao_login:hover { background-color:#515ebc; }
+
+.roxo #botao_login { border:1px solid #6c7cd2; }
+
+.roxo .sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-active { background-color: #636fc8; }
+
+.roxo .abrir h3 a:hover {	background-color:#a6ade0; }
+
+.roxo .Syncfusion-Grid-Marble .SelectionBackground { background-color: #c1c6e9 !important; }
+
+.roxo .sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-hover,
+.roxo .sf-jqueryui.Metro .ui-widget-content .ui-datepicker-calendar td a.ui-state-default.ui-state-highlight { background-color: #d5d8f0; }
+
+.roxo .area_retratil .aba,
+.roxo .area_retratil .abas_simples li a.ativo { border: 1px solid #dfe2f4; }
+.roxo .area_retratil .abas_simples { border-bottom: 1px solid #dfe2f4; }
+.roxo .grid  tr.selecionada,
+.roxo .Syncfusion-Grid-Marble .SelectionBackground { background-color:#dfe2f4 !important; }
+
+.roxo .ui-datepicker td:hover,
+.roxo #titulo .nome_tela.secundario,
+.roxo #subtitulo .nome_tela.secundario,
+.roxo #titulo .nome_tela.breadscrumb,
+.roxo #subtitulo .nome_tela.breadscrumb,
+.roxo .area_retratil .abas_simples li a.ativo { background-color:#e6e8f6; }
+
+.roxo .painel h3 a:hover { 
+	background-color: rgba(213, 213, 242, 0.35);
+    *background-color: #d5d5f2; 
+}
+
+.roxo #menu .dropdown ul li a:hover, 
+.roxo #menu .dropdown ul li.submenu .submenu_titulo:hover, 
+.roxo #menu .dropdown ul li.selecionado .submenu_titulo { background-color:#ebecf8; }
+
+.roxo .area_retratil .aba { background-color: #e1e3f4; }
+
+
+/* gradientes */
+
+.roxo #titulo .nome_tela,
+.roxo #subtitulo .nome_tela,
+.roxo #cabecalho .menu ul #nome_modulo:hover,
+.roxo #cabecalho .menu ul li.ativo,
+.roxo #titulo .nome_tela.breadscrumb,
+.roxo #subtitulo .nome_tela.breadscrumb { 
+    background: #636fc8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #6f7acc 0%, #5764c4 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  #6f7acc 0%,#5764c4 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #6f7acc 0%,#5764c4 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #6f7acc 0%,#5764c4 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #6f7acc 0%,#5764c4 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f7acc', endColorstr='#5764c4',GradientType=0 ); /* IE6-9 */
+}
+
+.roxo .abrir h3,
+.roxo .wizard span.atual,
+.roxo #titulo .nome_tela.secundario,
+.roxo #subtitulo .nome_tela.secundario {
+    background: #b5bcea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c9cff0 0%, #a1aae6 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  #c9cff0 0%,#a1aae6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #c9cff0 0%,#a1aae6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #c9cff0 0%,#a1aae6 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #c9cff0 0%,#a1aae6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9cff0', endColorstr='#a1aae6',GradientType=0 ); /* IE6-9 */
+}

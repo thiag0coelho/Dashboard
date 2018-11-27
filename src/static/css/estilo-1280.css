@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ----------------------------------------------------- */
+/* ------------------------ GRID ----------------------- */
+
+.container { width: 1150px; }
+.ui-dialog {width: 1090px !important;}
+.janela .container, .sf-jqueryui .ui-dialog .container, .sf-jqueryui .ui-dialog-content, .ui-dialog .container, .ui-dialog-content {width: 1080px !important;}
+.popup .container {width: 580px;}
+.pergunta .container {width: 370px;}
+
+.tbox #janela {width: 1150px !important; height: 500px !important;-webkit-overflow-scrolling:touch}
+.tbox #janela iframe {height: 500px !important; width:100% !important;-webkit-overflow-scrolling:touch}
+.box.janela .container {margin: 0px;}
+
+#popup {width: 600px !important; height: 550px !important;-webkit-overflow-scrolling:touch}
+#popup iframe {height: 550px !important; width:100% !important;-webkit-overflow-scrolling:touch}
+
+#pergunta {width: 380px !important; height: 200px !important;-webkit-overflow-scrolling:touch}
+#pergunta iframe {height: 200px !important; width:100% !important;-webkit-overflow-scrolling:touch}
+
+.container .largura100 { width: 98%;}
+
+.container .largura80 { width: 78%; }
+.container .largura70 { width: 68%; }
+.container .largura60 { width: 58%; }
+.container .largura40 { width: 38%; }
+.container .largura20 { width: 18%; }
+
+.container .largura75 { width: 73%; }
+.container .largura50 { width: 48%; }
+.container .largura45 { width: 43%; }
+.container .largura25 { width: 23%; }
+
+.container .largura66 { width: 64%; }
+.container .largura33 { width: 31.3%; }
+
+
+.container .largura10 { width: 8%; }
+.container .largura15 { width: 13%; }
+.container .largura30 { width: 28%; }
+.container .largura35 { width: 33%; }
+
+.container .largura10,
+.container .largura15,
+.container .largura30,
+.container .largura100, 
+.container .largura80,
+.container .largura70,
+.container .largura60,
+.container .largura40,
+.container .largura45,
+.container .largura20,
+.container .largura75,
+.container .largura50,
+.container .largura25,
+.container .largura66,
+.container .largura35,
+.container .largura33 {
+	padding-right:1% !important;
+	padding-left:1% !important;
+	margin:8px 0px 4px 0px !important;
+}
+
+
+.container .grupo .componente .largura100 { width: 95%;}
+
+.container .grupo .componente .largura80 { width: 75% !important; }
+.container .grupo .componente .largura70 { width: 65%; }
+.container .grupo .componente .largura60 { width: 55%; }
+.container .grupo .componente .largura40 { width: 35%; }
+.container .grupo .componente .largura20 { width: 15.5%; }
+
+.container .grupo .componente .largura75 { width: 70%; }
+.container .grupo .componente .largura50 { width: 45%; }
+.container .grupo .componente .largura45 { width: 40%; }
+.container .grupo .componente .largura25 { width: 20%; }
+
+.container .grupo .componente .largura66 { width: 61%; }
+.container .grupo .componente .largura33 { width: 28.5%; }
+
+.container .grupo .componente .largura10 { width: 5%; }
+.container .grupo .componente .largura15 { width: 10%; }
+.container .grupo .componente .largura30 { width: 25%; }
+.container .grupo .componente .largura35 { width: 30%; }
+
+
+.container .grupo .componente .largura10,
+.container .grupo .componente .largura15,
+.container .grupo .componente .largura30,
+.container .grupo .componente .largura100, 
+.container .grupo .componente .largura80,
+.container .grupo .componente .largura70,
+.container .grupo .componente .largura60,
+.container .grupo .componente .largura40,
+.container .grupo .componente .largura45,
+.container .grupo .componente .largura20,
+.container .grupo .componente .largura75,
+.container .grupo .componente .largura50,
+.container .grupo .componente .largura25,
+.container .grupo .componente .largura66,
+.container .grupo .componente .largura35,
+.container .grupo .componente .largura33 {
+	padding-right: 2% !important;
+	padding-left: 2% !important;
+	margin: 1px 0px 3px !important;
+}
+
+/* --- */
+
+
+#cabecalho #menu,
+#cabecalho #box_menu_principal { width: 650px; }
+.agencia #cabecalho #menu { width: auto; height: auto !important; }
+
+#cabecalho .inicio ul li span {
+	font-size:1.05em;
+	padding-top: 7px;
+}
+
+.campo.grupo .componente {
+	width: 103%;
+}
+
+.campo.grupo .componente.cinco {
+	width: 101.5%;
+}
+
+.campo.grupo .componente.select {
+	width: 103.6%;
+}
+
+#titulo .area_retratil .coluna.largura33 {
+	height: 168px;
+	padding-top: 10px;
+}
