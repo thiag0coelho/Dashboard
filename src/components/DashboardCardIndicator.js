@@ -1,4 +1,6 @@
 import React from 'react';
+import DashboardCardList from './DashboardCardList';
+import LiItem from '../utils/LiItem';
 
 const DashboardCardIndicator = ({ dashboardCard }) => {
     return (
@@ -15,28 +17,17 @@ const DashboardCardIndicator = ({ dashboardCard }) => {
                 {
                     dashboardCard.secundario &&
                     <li className="secundario">
-                        {
-                            dashboardCard.secundario.titulo &&
-                            <label>{dashboardCard.secundario.titulo}</label>
-                        }
+
                         {
                             dashboardCard.secundario.texto &&
                             <span>{dashboardCard.secundario.texto}</span>
                         }
                         {
-                            dashboardCard.secundario.lista &&
-                            (
-                                <ul>
-                                    {dashboardCard.secundario.lista.map((item) => (
-                                        <li className={item.classe}>
-                                            <span>{item.titulo}</span>
-                                            <label>{item.texto}</label>
-                                        </li>
-                                    ))
-                                    }
-                                </ul>
-                            )
+                            dashboardCard.secundario.titulo &&
+                            <label>{dashboardCard.secundario.titulo}</label>
                         }
+
+                        <DashboardCardList lista={dashboardCard.secundario.lista} />
                     </li>
                 }
 
@@ -46,26 +37,14 @@ const DashboardCardIndicator = ({ dashboardCard }) => {
                         (
                             <ul>
                                 {
-                                    dashboardCard.primeiraSecao.map((item) => (
-                                        <li className={item.classe}>
-                                            <span>{item.titulo}</span>
-                                            <label>{item.texto}</label>
-                                        </li>
-                                    ))
+                                    dashboardCard.primeiraSecao.map((item) =>
+                                        <LiItem item={item} />
+                                    )
                                 }
                                 {
                                     dashboardCard.primeiraSecaoVertical &&
                                     <li className="vertical">
-                                        <ul>
-                                            {
-                                                dashboardCard.primeiraSecaoVertical.map((item) => (
-                                                    <li className={item.classe}>
-                                                        <span>{item.titulo}</span>
-                                                        <label>{item.texto}</label>
-                                                    </li>
-                                                ))
-                                            }
-                                        </ul>
+                                        <DashboardCardList lista={dashboardCard.primeiraSecaoVertical} />
                                     </li>
                                 }
                             </ul>
