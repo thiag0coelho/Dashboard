@@ -1,11 +1,12 @@
 import React from 'react';
 import DashboardCardIndicator from './DashboardCardIndicator'
 import { connect } from 'react-redux';
+import removeAccents from 'remove-accents';
 
 const DashboardCard = ({ dashboardCard, id }) => {
-    const nameLowerCase = id.toLowerCase();
+    const nameLowerCase = removeAccents(id.toLowerCase());
     return (
-        <div className={`painel_dashboard largura25 ${nameLowerCase}`}>
+        <div className={`painel_dashboard largura25 ${nameLowerCase} ${dashboardCard.classe}`}>
             <div>
                 <h2>{id}</h2>
                 <a href={`${nameLowerCase}/`} alt={`${id}`}>

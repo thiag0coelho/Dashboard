@@ -1,38 +1,76 @@
 import React from 'react';
 
-const DashboardCardIndicator = ( { dashboardCard } ) => {
+const DashboardCardIndicator = ({ dashboardCard }) => {
     return (
         <div className="indicadores">
             <ul>
-                <li className="destaque">
-                    <span>{dashboardCard.destaque.titulo}</span>
-                    <label>{dashboardCard.destaque.texto}</label>
-                </li>
+                {
+                    dashboardCard.destaque &&
+                    <li className="destaque">
+                        <span>{dashboardCard.destaque.titulo}</span>
+                        <label>{dashboardCard.destaque.texto}</label>
+                    </li>
+                }
 
-                <li className="secundario">
-                    <label>{dashboardCard.secundario.titulo}</label>
-                    <span>{dashboardCard.secundario.texto}</span>
-                </li>
+                {
+                    dashboardCard.secundario &&
+                    <li className="secundario">
+                        {
+                            dashboardCard.secundario.titulo &&
+                            <label>{dashboardCard.secundario.titulo}</label>
+                        }
+                        {
+                            dashboardCard.secundario.texto &&
+                            <span>{dashboardCard.secundario.texto}</span>
+                        }
+                        {
+                            dashboardCard.secundario.lista &&
+                            (
+                                <ul>
+                                    {dashboardCard.secundario.lista.map((item) => (
+                                        <li className={item.classe}>
+                                            <span>{item.titulo}</span>
+                                            <label>{item.texto}</label>
+                                        </li>
+                                    ))
+                                    }
+                                </ul>
+                            )
+                        }
+                    </li>
+                }
 
                 <li>
-                    <ul>
-                        <li>
-                            <span>100</span>
-                            <label>consultas débitos</label>
-                        </li>
-                        <li>
-                            <span>50</span>
-                            <label>emissões de 2ª via da fatura</label>
-                        </li>
-                        <li>
-                            <span>100</span>
-                            <label>solicitações</label>
-                        </li>
-                        <li>
-                            <span>20</span>
-                            <label>reclamações</label>
-                        </li>
-                    </ul>
+                    {
+                        dashboardCard.primeiraSecao &&
+                        (
+                            <ul>
+                                {
+                                    dashboardCard.primeiraSecao.map((item) => (
+                                        <li className={item.classe}>
+                                            <span>{item.titulo}</span>
+                                            <label>{item.texto}</label>
+                                        </li>
+                                    ))
+                                }
+                                {
+                                    dashboardCard.primeiraSecaoVertical &&
+                                    <li className="vertical">
+                                        <ul>
+                                            {
+                                                dashboardCard.primeiraSecaoVertical.map((item) => (
+                                                    <li className={item.classe}>
+                                                        <span>{item.titulo}</span>
+                                                        <label>{item.texto}</label>
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </li>
+                                }
+                            </ul>
+                        )
+                    }
                 </li>
             </ul>
             <div className="grafico"></div>
