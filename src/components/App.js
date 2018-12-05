@@ -5,15 +5,22 @@ import Layout from './Layout'
 import DashboardCards from './DashboardCards';
 import handleRecebeDadosIniciais from '../actions/shared';
 
+const alignCards = {
+  display: 'flex',
+  justifyContent: 'center',
+  flexWrap: 'wrap',
+}
+
 class App extends Component {
   componentDidMount() {
     this.props.dispatch(handleRecebeDadosIniciais())
   }
+  
   render() {
     return (
       <Layout>
         <div id="area_dados" className="dados">
-          <div className="paineis_dashboard">
+          <div className="paineis_dashboard" style={alignCards}>
             <DashboardCards />
           </div>
         </div>

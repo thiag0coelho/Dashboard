@@ -1,66 +1,38 @@
 import React from 'react';
-import { Radio, FormGroup, Checkbox, Row, Col, FormControl, InputGroup, Glyphicon } from 'react-bootstrap';
+import { Row, Col, FormGroup, CustomInput, Input, Form } from 'reactstrap';
 
 const body = {
-    paddingTop: '5px',
-    borderBottom: '1px solid #dadada',
-    backgroundColor: '#fff',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '10px',
+    marginRight: '0px',
 }
-
-const defaultComponentSize =
-{
-    maxHeight: '32px',
-    minHeight: '32px',
-}
-
-const formStyle = {
-    padding: '4px 7px',
-    border: '1px solid #ccc',
-    borderRadius: '3px',
-    fontSize: '0.85em',
-    maxHeight: '32px',
-    minHeight: '32px',
-    margin: '0px 18px 0px 0px'
-};
 
 export default ({ children }) => (
-    <Row className="center-block" style={body}>
-        <Col xs={12} md={3} style={formStyle}>
-            <FormGroup >
-                <Radio name="periodo" inline={true}>dia</Radio>{' '}
-                <Radio name="periodo" inline={true}>semana</Radio>{' '}
-                <Radio name="periodo" inline={true}>mês</Radio>{' '}
-                <Radio name="periodo" inline={true}>ano</Radio>
-            </FormGroup>
-        </Col>
+    <Form className="form">
+        <Row style={body}>
+            <Col xs={12} md={5}>
+                <FormGroup>
+                    <CustomInput id="chkPeriodo1" inline type="radio" name="periodo" label="dia" />
+                    <CustomInput id="chkPeriodo2" inline type="radio" name="periodo" label="semana" />
+                    <CustomInput id="chkPeriodo3" inline type="radio" name="periodo" label="mês" />
+                    <CustomInput id="chkPeriodo4" inline type="radio" name="periodo" label="ano" />
+                </FormGroup>
+            </Col>
 
-        <Col xs={6} md={2} style={formStyle}>
-            <FormGroup >
-                <Checkbox inline={true}>comparar</Checkbox>
-            </FormGroup>
-        </Col>
+            <Col xs={4} md={2}>
+                <CustomInput type="checkbox" id="exampleCustomInline" inline label="comparar" />
+            </Col>
 
-        <Col xs={5} md={2}>
-            <FormGroup>
-                <InputGroup>
-                    <FormControl type="text" style={defaultComponentSize} />
-                    <InputGroup.Addon>
-                        <Glyphicon glyph="calendar" />
-                    </InputGroup.Addon>
-                </InputGroup>
-            </FormGroup>
-        </Col>
+            <Col xs={8} md={2} >
+                <Input type="text" />
+            </Col>
 
-        <Col xs={4} md={3}>
-            <FormGroup>
-                <FormControl
-                    className="pesquisar"
-                    type="submit"
-                    value="consultar"
-                    title="consultar"
-                    alt="consultar"
-                    style={defaultComponentSize} />
-            </FormGroup>
-        </Col>
-    </Row>
+            <Col xs={12} md={2}>
+                <Input className="pesquisar" type="submit" value="consultar" title="consultar" alt="consultar" />
+            </Col>
+        </Row>
+        <hr />
+    </Form>
 )

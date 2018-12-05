@@ -34,10 +34,8 @@
 /* ------------------------ GERAL ----------------------- */
 
 body {
-	font-size: 14px;
 	background-color: #fff;
 	font-family: 'Lato', Arial, sans-serif;
-	font-weight:normal;
 	color:#333;
 }
 
@@ -512,7 +510,7 @@ a:hover {color: #000;}
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	background-color:rgba(0,0,0,0.4);
-	background-color: #333\9;
+	background-color: #333;
 	box-shadow:0px 0px 3px 2px rgba(0,0,0,0.5) inset;
 	-moz-box-shadow:0px 0px 3px 2px rgba(0,0,0,0.5) inset;
 	-webkit-box-shadow:0px 0px 3px 2px rgba(0,0,0,0.5) inset;
@@ -735,17 +733,6 @@ a:hover {color: #000;}
 	background-color:#444;
 	background-image:none;
 }
-
-
-
-/* ------------------- CORPO -------------------- */
-
-#corpo {
-	background-color: #f5f5f5;
-	background-image:url(../imagens/fundo_hachura.png);
-	margin:0px;
-}
-
 
 /* ------------------ MENU MODULOS ---------------- */
 
@@ -2806,14 +2793,14 @@ input.botao[disabled] {
 
 .painel_dashboard .grafico {background-color:#eee;}
 
-.painel_dashboard.atendimento .grafico {height:190px;}
-.painel_dashboard.servicos .grafico {height:214px;}
-.painel_dashboard.arrecadacao .grafico {height:136px;}
-.painel_dashboard.leituras .grafico {height:162px;}
-.painel_dashboard.faturamento .grafico {height:157px;}
-.painel_dashboard.operacional .grafico {height:268px;}
-.painel_dashboard.hidrometria .grafico {height:207px;}
-.painel_dashboard.juridico .grafico {height:160px;}
+.painel_dashboard.atendimento .grafico {height:120px;}
+.painel_dashboard.servicos .grafico {height:160px;}
+.painel_dashboard.arrecadacao .grafico {height:40px;}
+.painel_dashboard.leituras .grafico {height:110px;}
+.painel_dashboard.faturamento .grafico {height:70px;}
+.painel_dashboard.operacional .grafico {height:230px;}
+.painel_dashboard.hidrometria .grafico {height:170px;}
+.painel_dashboard.juridico .grafico {height:50px;}
 
 
 

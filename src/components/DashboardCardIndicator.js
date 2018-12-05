@@ -38,7 +38,7 @@ const DashboardCardIndicator = ({ dashboardCard }) => {
                             <ul>
                                 {
                                     dashboardCard.primeiraSecao.map((item) =>
-                                        <LiItem item={item} />
+                                        <LiItem key={item.id} item={item} />
                                     )
                                 }
                                 {
