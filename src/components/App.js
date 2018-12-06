@@ -1,30 +1,32 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
-import Layout from './Layout'
-import DashboardCards from './DashboardCards';
 import handleRecebeDadosIniciais from '../actions/shared';
-
-const alignCards = {
-  display: 'flex',
-  justifyContent: 'center',
-  flexWrap: 'wrap',
-}
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Dashboard from './pages/Dashboard'
+import Atendimento from './pages/Atendimento'
 
 class App extends Component {
   componentDidMount() {
     this.props.dispatch(handleRecebeDadosIniciais())
   }
-  
+
   render() {
     return (
-      <Layout>
-        <div id="area_dados" className="dados">
-          <div className="paineis_dashboard" style={alignCards}>
-            <DashboardCards />
-          </div>
+      <Router>
+        <div>
+          <Route path="/" exact component={Dashboard} />
+          <Route path="/atendimento/" component={Atendimento} />
         </div>
-      </Layout>
+        {/* <Route path="/arrecadacao/" component={Arrecadacao} />
+            <Route path="/atendimento/" component={Atendimento} />
+            <Route path="/faturamento/" component={Faturamento} />
+            <Route path="/hidrometria/" component={Hidrometria} />
+            <Route path="/juridico/" component={Juridico} />
+            <Route path="/leitura/" component={Leitura} />
+            <Route path="/operacional/" component={Operacional} />
+            <Route path="/servico/" component={Servico} /> */}
+      </Router>
     )
   }
 }

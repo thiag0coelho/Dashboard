@@ -18,7 +18,7 @@ let dashboards = {
             { id: guid(), titulo: "20", texto: "reclamações" },
         ],
     },
-    Servicos: {
+    Servico: {
         classe: "alerta",
         destaque: {
             titulo: "800",
@@ -58,7 +58,7 @@ let dashboards = {
             { id: guid(), titulo: "6,45%", texto: "inadimp." },
         ]
     },
-    Leituras: {
+    Leitura: {
         classe: "alerta",
         destaque: {
             titulo: "3.000",

@@ -5,11 +5,11 @@ const body = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: '10px',
+    // padding: '10px',
     marginRight: '0px',
 }
 
-export default ({ children }) => (
+const Search = ({ children }) => (
     <Form className="form">
         <Row style={body}>
             <Col xs={12} md={5}>
@@ -36,3 +36,5 @@ export default ({ children }) => (
         <hr />
     </Form>
 )
+
+export default Search;
