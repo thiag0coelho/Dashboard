@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
 import handleRecebeDadosIniciais from '../actions/shared';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Dashboard from './pages/Dashboard'
 import Atendimento from './pages/Atendimento'
 
@@ -15,8 +15,8 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Route path="/" exact component={Dashboard} />
-          <Route path="/atendimento/" component={Atendimento} />
+          <Route path="/" exact component={Dashboard}/>
+          <Route path="/atendimento/" component={Atendimento}/>
         </div>
         {/* <Route path="/arrecadacao/" component={Arrecadacao} />
             <Route path="/atendimento/" component={Atendimento} />
